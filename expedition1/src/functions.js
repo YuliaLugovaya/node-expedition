@@ -19,7 +19,7 @@ function getRightCaptain() {
   let bestCaptain = arrayOnlyCaptains.sort((a, b) => {
     a = a[3];
     b = b[3];
-    return +b - +a
+    return +b - +a;
   })
   return bestCaptain[0].join(', ');
 }
@@ -44,7 +44,7 @@ function getRightDoc() {
   let bestDoctor = arrayOnlyDoctorsWomen.sort((a, b) => {
     a = a[3];
     b = b[3];
-    return +b - +a
+    return +b - +a;
   })
   return bestDoctor[0].join(', ');
 }
@@ -121,7 +121,7 @@ function getRightRocket() {
   let bestRocket = arrayRocketsMore.sort((a, b) => {
     a = a[2];
     b = b[2];
-    return +b - +a
+    return +b - +a;
   })
   return bestRocket[0].join(', ');
 }
