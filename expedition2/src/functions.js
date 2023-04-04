@@ -38,7 +38,7 @@ function getCaptainAssistant() {
   let bestCaptainAssistant = arrayOnlyCaptains.sort((a, b) => {
     a = a[3];
     b = b[3];
-    return +b - +a
+    return +b - +a;
   })
   return bestCaptainAssistant[0].join(', ');
 }
@@ -81,7 +81,7 @@ function getTwoEngineers() {
   let bestEngineers = arrayOnlyEngineers.sort((a, b) => {
     a = a[3];
     b = b[3];
-    return +b - +a
+    return +b - +a;
   })
 
   return bestEngineers.slice(0, 2).map((el) => el.join(', '));
@@ -144,7 +144,7 @@ function getRightRocket() {
   let bestRocket = arrayOnlyOrbit.sort((a, b) => {
     a = a[2];
     b = b[2];
-    return +b - +a
+    return +b - +a;
   })
   return bestRocket[0].join(', ');
 }
