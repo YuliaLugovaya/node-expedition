@@ -22,7 +22,6 @@ function getRightCaptain() {
   })
   return bestCaptain[0].join(', ');
 }
-console.log(getRightCaptain());
 
 // позволяет выбрать самого опытного врача среди женщин
 function getRightDoc() {
@@ -51,7 +50,6 @@ function getAllEngineer() {
   }).filter((el) => {
     return el.includes('Бортмеханик');
   }).map((el) => el.join(', '));
-
 }
 
 // Позволяет отобрать все марсоходы
@@ -63,7 +61,6 @@ function getAllRover() {
   }).filter((el) => {
     return el.includes('марсоход');
   }).map((el) => el.join(', '));
-
 }
 
 // позволяет выбрать только те марсоходы, которые смогут прослужить больше 3 лет
@@ -75,7 +72,6 @@ function getRightRovers() {
   }).filter((el) => {
     return el.includes('марсоход') && el[2] > 3;
   }).map((el) => el.join(', '));
-
 }
 
 // позволяет выбрать ракету с максимальной дальностью полёта
